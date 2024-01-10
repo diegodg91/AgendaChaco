@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <title>Agenda Chaco</title>
+</head>
+
+<body>
+
+    <nav class="bg-gray-800 border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./assets/agenciaLogo.svg" class="h-8" alt="Flowbite Logo" />
+
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 font-medium bg-gray-800 border border-gray-700 rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-800 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block px-3 py-2 text-white bg-gray-700 rounded md:bg-transparent md:text-blue-300 md:p-0 dark:text-white md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="./calendario.html"
+                            class="block px-3 py-2 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-200 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calendario</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-3 py-2 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-200 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ministerios</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-3 py-2 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-200 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./login.html"
+                            class="block px-3 py-2 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-200 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Acceso
+                            personal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="flex flex-row gap-4 pb-10 mx-auto mt-5 md:container ps-10">
+        <a href="./index.html" class="text-gray-600">Inicio /</a>
+        <a href="#" class="text-blue-400">Login /</a>
+    </div>
+
+    <div class="flex items-center justify-center h-auto gap-10 mx-auto text-white">
+        <!-- formulario container -->
+        <div class="p-10 border-2 rounded-md shadow-md bg-slate-100">
+            <!-- formulario login -->
+            <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                    <label for="email" class="block mb-2 text-sm text-gray-900 dark:text-white">Usuario</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M12.3 8.50002C11.55 7.60002 10.6 6.97502 9.54999 6.65002C10.6 6.10002 11.3 5.00002 11.3 3.72502C11.3 1.90002 9.82499 0.400024 7.97499 0.400024C6.12499 0.400024 4.67499 1.92502 4.67499 3.75002C4.67499 5.00002 5.37499 6.10002 6.42499 6.67502C5.37499 7.00002 4.44999 7.62502 3.67499 8.52502C2.57499 9.82502 1.94999 11.625 1.92499 13.6C1.92499 13.825 2.04999 14.025 2.22499 14.1C2.89999 14.45 5.34999 15.55 7.97499 15.55C10.825 15.55 13.1 14.425 13.75 14.075C13.925 13.975 14.05 13.775 14.05 13.575C14.025 11.625 13.4 9.82502 12.3 8.50002ZM7.99999 1.57502C9.19999 1.57502 10.2 2.55002 10.2 3.77502C10.2 5.00002 9.22499 5.97502 7.99999 5.97502C6.77499 5.97502 5.79999 5.00002 5.79999 3.77502C5.79999 2.55002 6.79999 1.57502 7.99999 1.57502ZM7.99999 14.45C5.92499 14.45 3.89999 13.65 3.07499 13.25C3.17499 11.675 3.67499 10.275 4.54999 9.22503C5.44999 8.15003 6.67499 7.55002 7.99999 7.55002C9.32499 7.55002 10.55 8.15003 11.45 9.22503C12.325 10.25 12.85 11.675 12.925 13.25C12.15 13.65 10.25 14.45 7.99999 14.45Z"
+                                    fill="#6B7280" />
+                            </svg>
+                        </div>
+
+                        <input type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-1 focus:outline-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-300 dark:focus:border-blue-300"
+                            placeholder="user123@agenda" required>
+                    </div>
+
+                </div>
+                <div class="mb-5">
+                    <label for="password" class="block mb-2 text-sm text-gray-900 dark:text-white">Contraseña</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"
+                                fill="none">
+                                <path
+                                    d="M6.25832 5.99999C6.25832 5.03408 7.03408 4.25832 7.99999 4.25832C8.96589 4.25832 9.74165 5.03408 9.74165 5.99999C9.74165 6.96589 8.96589 7.74165 7.99999 7.74165C7.03408 7.74165 6.25832 6.96589 6.25832 5.99999ZM6.71665 5.99999C6.71665 6.70908 7.29089 7.28332 7.99999 7.28332C8.70908 7.28332 9.28332 6.70908 9.28332 5.99999C9.28332 5.29089 8.70908 4.71665 7.99999 4.71665C7.29089 4.71665 6.71665 5.29089 6.71665 5.99999Z"
+                                    fill="#6B7280" stroke="#6B7280" stroke-width="0.666667" />
+                                <path
+                                    d="M14.6504 6.43789L14.6631 6.41927L14.6731 6.39911C14.7951 6.15526 14.7951 5.84481 14.6731 5.60097L14.6631 5.5808L14.6504 5.56218C13.7218 4.2012 12.7766 3.21568 11.6953 2.57289C10.6095 1.92737 9.41068 1.6417 8 1.6417C6.58932 1.6417 5.39046 1.92737 4.30466 2.57289C3.22345 3.21568 2.27816 4.2012 1.34965 5.56218L1.34963 5.56217L1.34765 5.56514C1.17301 5.8271 1.17301 6.17297 1.34765 6.43494L1.34763 6.43495L1.34965 6.43789C2.27816 7.79887 3.22345 8.78439 4.30466 9.42718C5.39046 10.0727 6.58932 10.3584 8 10.3584C9.41068 10.3584 10.6095 10.0727 11.6953 9.42718C12.7766 8.78439 13.7218 7.79887 14.6504 6.43789ZM8 1.18337C9.88299 1.18337 11.2854 1.70064 12.3883 2.46467C13.4973 3.23288 14.3196 4.26157 15.0228 5.31019C15.2955 5.71946 15.3009 6.24957 15.0213 6.69213C14.318 7.72806 13.4961 8.75568 12.3878 9.52637C11.2844 10.2937 9.88211 10.8167 8 10.8167C6.11789 10.8167 4.71558 10.2937 3.61219 9.52637C2.50285 8.75492 1.68039 7.72604 0.976644 6.68908C0.702075 6.27628 0.70223 5.72294 0.977108 5.3103C1.68036 4.26164 2.50268 3.23291 3.61169 2.46467C4.71463 1.70064 6.11701 1.18337 8 1.18337Z"
+                                    fill="#6B7280" stroke="#6B7280" stroke-width="0.666667" />
+                            </svg>
+                        </div>
+                        <input type="password" id="password"
+                            class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-1 focus:outline-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-300 dark:focus:border-blue-300"
+                            placeholder="*****" required>
+                    </div>
+
+                </div>
+                <div class="flex items-start mb-5">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                            required>
+                    </div>
+                    <label for="remember" class="text-sm text-gray-900 ms-2 dark:text-gray-300">Recordar
+                        credenciales</label>
+                </div>
+                <button type="submit"
+                    class="text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:w-full w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ingresar</button>
+            </form>
+            <!-- fin formulario login -->
+        </div>
+        <!-- formulario container -->
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>
